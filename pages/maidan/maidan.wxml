@@ -1,0 +1,34 @@
+<form>
+  <view class='pd_30'>
+    <view class="fon17_333">本次消费总金额</view>
+    <input class='W_inp mg_t20' placeholder='0.00' placeholder-style='font-size:40px;color:#FF6A88;'></input>
+    <view class='fon11_9b mg_t20'>提示：具体消费金额请询问店家</view>
+  </view>
+
+  <!-- 隔断  -->
+  <view class='ge_fa10'></view>
+
+  <!-- 支付方式  -->
+  <view class='W_members pd_30'>
+    <radio-group>
+      <view class='fon17_333'>支付方式</view>
+      <view class=' lin_45 mg_t40 clearFix' wx:for="{{fuli}}">
+        <radio class='fl'></radio>
+        <image class='fr' src='{{item.img}}'></image>
+        <text class='W_word fon14_9b fr mg_r20'>{{item.word}}（￥400）</text>
+      </view>
+    </radio-group>
+  </view>
+  <!-- 支付方式 END -->
+
+  <!-- 优惠券  -->
+  <view class='W_youhui pd_30 clearFix'>
+    <text class='fl fon14_333'>优惠券</text>
+    <text class='fr fon14_9b'>无可用优惠券</text>
+  </view>
+  <!-- 优惠券 END -->
+
+  <!-- 立即支付按钮  -->
+  <view class='W_chongzhi_btn W_jian_lr txt_ct fon17_fff' catchtap='OK'>立即支付</view>
+  <!-- 立即支付按钮 END -->
+</form>

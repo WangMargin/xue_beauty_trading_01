@@ -1,0 +1,53 @@
+
+
+<form>
+<!-- 商品信息  -->
+ <!-- 商品信息  -->
+  <view class='W_detail_top pd_20 clearFix' wx:for="{{detaillist}}">
+    <view class='W_detail_top_l clearFix fl'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='W_detail_top_r fl mg_l30 '>
+      <view class='fon17_333 one'>{{item.name}}</view>
+      <view class='fon11_9b two mg_t10'>商品总价:￥{{item.money}}</view>
+      <view class='fon16_333 mg_t10'>￥{{item.kdmoney}}</view>
+    </view>
+  </view>
+  <!-- 商品信息 END  -->
+<!-- 商品信息 END -->
+  <view class='W_yulan pd_lr30'>
+    <view class='W_yulan_list bd_bed'>
+      <text class='fon16_333 fl'>姓名称呼</text>
+      <input class='fon14_333 fl' placeholder='请输入姓名称呼'></input>
+    </view>
+    <view class='W_yulan_list bd_bed'>
+      <text class='fon16_333 fl'>联系电话</text>
+      <input class='fon14_333 fl' placeholder='请输入联系电话'></input>
+      <image class='fr' src='../../images/telbook.png'></image>
+    </view>
+    <view class='W_yulan_list bd_bed'>
+      <text class='fon16_333 fl'>联系地址</text>
+      <input class='fon14_333 fl' placeholder='请输入联系地址'></input>
+      <image class='fr' src='../../images/address.png'></image>
+    </view>
+    <view class='W_yulan_list bd_bed' catchtap='toxiangmu'>
+      <text class='fon16_333 fl'>服务项目</text>
+      <view class='fon14_pink fl'>面部护理套餐</view>
+    </view>
+    <view class='W_yulan_list bd_bed'>
+      <text class='fon16_333 fl'>服务技师</text>
+      <view class='fon14_pink fl'>Sarimi</view>
+    </view>
+    <view class='W_yulan_list bd_bed'>
+      <text class='fon16_333 fl'>预约时间</text>
+      <view class='fon14_333 fl'>预约时间</view>
+      <image class='fr' src='../../images/yuyue.png'></image>
+    </view>
+    <view class='W_yulan_list bd_bed'>
+      <text class='fon16_333 fl'>优惠券</text>
+      <input class='fon14_333 fl' placeholder='请输入'></input>
+      <image class='fr' src='../../images/yhq.png'></image>
+    </view>
+  </view>
+  <view class='W_yuyue_btn fon17_fff W_jian_lr txt_ct'>立即预约</view>
+</form>

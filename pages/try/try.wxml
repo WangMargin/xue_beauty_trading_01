@@ -1,0 +1,14 @@
+<picker mode="date" value="{{date1}}" start="2010-01-01" end="2030-12-31" bindchange="bindDateChange">
+    <view class="form_group">
+        <text>住房时间：</text>
+        <text class="textss" style="width:460rpx;text-align:left;">{{date1}}</text>
+    </view>
+  </picker>
+  <picker mode="date" value="{{date2}}" start="2010-01-01" end="2030-12-31" bindchange="bindDateChangeTwo">
+    <view class="form_group">
+        <text>退房时间：</text>
+        <text class="textss" style="width:460rpx;text-align:left;">{{date2}}</text>
+    </view>
+  </picker>
+
+

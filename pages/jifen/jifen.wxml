@@ -1,0 +1,19 @@
+<block wx:for="{{listshop}}">
+  <view class='W_shoplist' catchtap='{{item.bind1}}'>
+    <view class='W_shoplist_bot clearFix pd_lr30'>
+      <view class='W_shoplist_bot_l fl'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='W_shoplist_bot_r fon17_333 fr'>
+        <view class='W_shoplist_bot_r_1'>
+          <text class=' fl fon13_pink'>{{item.name}}</text>
+        </view>
+        <view class='W_shoplist_bot_r_2 clearFix mg_t20'>
+          <view class='fon14_64 fl'>满{{item.money}}元可用</view>
+          <view class='W_shoplist_bot_r_2_r fr fon14_fff W_jian_lr' catchtap='OK'>2000积分</view>
+        </view>
+        <view class='W_shoplist_02 fon11_9b'>有效期：{{item.time}} 前有效</view>
+      </view>
+    </view>
+  </view>
+</block>

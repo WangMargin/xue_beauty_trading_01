@@ -1,0 +1,41 @@
+<!-- 顶部轮播  -->
+<view class='W_home'>
+  <swiper class='W_home_sw' indicator-dots="true" autoplay="true" interval="2000" duration="1000" circular>
+    <swiper-item wx:for="{{swlist}}">
+      <image class='W_swiperimg' src='{{item.img}}'></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 顶部轮播 END  -->
+
+<!-- 下部介绍  -->
+<view class='W_aboutus_say pd_20'>
+  <view class='txt_ct'>
+    <view class='fon14_pink mg_t20'>温馨的环境</view>
+    <view class='fon11_333 mg_t10'>SPA SEROUNDINGS</view>
+    <view class='mg_t20'>
+      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1991891072,3922894220&fm=27&gp=0.jpg'></image>
+      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1991891072,3922894220&fm=27&gp=0.jpg'></image>
+    </view>
+  </view>
+  <view class='txt_ct'>
+    <view class='fon14_pink mg_t20'>贴心的服务</view>
+    <view class='fon11_333 mg_t10'>HUMANE SERVICE</view>
+    <view class='mg_t20'>
+      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1991891072,3922894220&fm=27&gp=0.jpg'></image>
+      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1991891072,3922894220&fm=27&gp=0.jpg'></image>
+    </view>
+  </view>
+  <view class='txt_ct'>
+    <view class='fon14_pink mg_t20'>专业的团队</view>
+    <view class='fon11_333 mg_t10'>PROFESIONAL TEAM</view>
+    <view class='mg_t20'>
+      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1991891072,3922894220&fm=27&gp=0.jpg'></image>
+      <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1991891072,3922894220&fm=27&gp=0.jpg'></image>
+    </view>
+  </view>
+
+
+
+</view>
+<!-- 下部介绍 END -->

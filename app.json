@@ -1,0 +1,65 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/aboutus/aboutus",
+    "pages/chongzhi/chongzhi",
+    "pages/order/order",
+    "pages/my/card",
+    "pages/try/try",
+    "pages/maidan/maidan",
+    "pages/order/detail",
+    "pages/fencenter/fencenter",
+    "pages/tixian/tixian",
+    "pages/tixian/yongjin",
+    "pages/myteam/myteam",
+    "pages/my/my",
+    "pages/ewm/ewm",
+    "pages/jifen/jifen",
+    "pages/yuyue/yuyue",
+    "pages/yuyue/login",
+    "pages/service/service",
+    "pages/service/servicebefore",
+    "pages/yuyue/yuyueorder",
+    "pages/yuyue/yuyueorderdetail",
+    "pages/youhui/youhui",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "SPA COME ON",
+    "backgroundColor": "#eeeeee",
+
+    "enablePullDownRefresh":true,
+    "onReachBottomDistance":"50",
+    "backgroundTextStyle":"dark"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/zy1.png",
+      "selectedIconPath": "/images/zy.png"
+    },
+    {
+      "pagePath": "pages/service/service",
+      "text": "项目",
+      "iconPath": "/images/fw1.png",
+      "selectedIconPath": "/images/fw.png"
+    },
+    {
+      "pagePath": "pages/yuyue/login",
+      "text": "预约",
+      "iconPath": "/images/yy1.png",
+      "selectedIconPath": "/images/yy.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/images/wd1.png",
+      "selectedIconPath": "/images/wd.png"
+    }
+    ]
+  }
+}

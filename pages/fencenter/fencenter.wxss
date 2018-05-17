@@ -1,0 +1,10 @@
+.W_fen_top_img {margin-top: 50rpx;}
+.W_fen_top_img image {width: 60px;height: 60px;border-radius: 50%;}
+  .W_fen_top_money01,.W_fen_top_money02 {width: 50%;}
+  .W_fen_top_txt {width:150rpx;height: 44rpx;border-radius: 22rpx;border: 1px solid pink;text-align: center;line-height: 44rpx;margin: 20rpx auto;}
+
+.W_fen_list {width: 700rpx;border-radius: 15rpx;box-shadow: 0rpx 5rpx 15rpx #ccc;margin: 20rpx auto;}
+  .W_fen_list_1 {height: 88rpx;line-height: 88rpx;border-bottom: 1px solid #EDEEF0;}
+  .W_fen_list_1 image {width: 20px;height: 20px;margin: 22rpx 0rpx 0rpx 0rpx;}
+
+

@@ -1,0 +1,143 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wx4f9782205dfcb382",
+	"projectname": "%E7%BE%8E%E5%AE%B9%E6%8A%A4%E7%90%86%E4%BA%A4%E6%98%93%E7%89%88",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 16,
+			"list": [
+				{
+					"id": -1,
+					"name": "分销订单",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现明细",
+					"pathName": "pages/tixian/tixian",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的团队",
+					"pathName": "pages/myteam/myteam",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分销中心",
+					"pathName": "pages/fencenter/fencenter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "佣金提现",
+					"pathName": "pages/tixian/yongjin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/order/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约",
+					"pathName": "pages/yuyue/yuyue",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约登录",
+					"pathName": "pages/yuyue/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约订单",
+					"pathName": "pages/yuyue/yuyueorder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目服务",
+					"pathName": "pages/service/service",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "充值",
+					"pathName": "pages/chongzhi/chongzhi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "会员卡",
+					"pathName": "pages/my/card",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约详情",
+					"pathName": "pages/yuyue/yuyueorderdetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "优惠券",
+					"pathName": "pages/youhui/youhui",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分兑换",
+					"pathName": "pages/jifen/jifen",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/try/try",
+					"query": ""
+				}
+			]
+		}
+	}
+}

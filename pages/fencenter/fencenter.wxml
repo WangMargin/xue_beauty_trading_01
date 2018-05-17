@@ -1,0 +1,33 @@
+<!-- 分销中心页面  -->
+<!-- 顶部用户盒子  -->
+<view class='W_fen_top txt_ct clearFix'>
+  <view class='W_fen_top_img'>
+    <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class='fon17_333 mg_t20'>{{userInfo.nickName}}</view>
+  <view class='W_fen_top_money mg_t40'>
+    <view class='W_fen_top_money01 fl'>
+      <view class='fon17_333'>188</view>
+      <view class='fon14_333 mg_t20'>成功提现佣金（元）</view>
+      <view class='W_fen_top_txt fon13_pink' catchtap='totixian'>提现明细</view>
+    </view>
+    <view class='W_fen_top_money02 fl'>
+      <view class='fon17_pink'>188</view>
+      <view class='fon14_333 mg_t20'>可提现佣金（元）</view>
+      <view class='W_fen_top_txt fon13_pink' catchtap='yongjin'>佣金提现</view>
+    </view>
+  </view>
+</view>
+<!-- 顶部用户盒子 END -->
+<!-- 隔断  -->
+<view class='ge10'></view>
+
+<!-- 列表  -->
+<view class='W_fen_list pd_lr30'>
+  <view class='W_fen_list_1 clearFix' wx:for="{{fenlist}}" catchtap='{{item.bind1}}'>
+    <image class='fl' src='{{item.img}}'></image>
+    <text class='fon14_333 fl mg_l20'>{{item.name}}</text>
+    <image class='fr' src='../../images/forright.png'></image>
+  </view>
+</view>
+<!-- 列表 END -->

@@ -1,0 +1,8 @@
+.W_shoplist {width: 710rpx;height:200rpx;background: #fff;border-radius: 15rpx;box-shadow: 0 2rpx 10rpx #EDEEF0;margin: 20rpx auto; }
+
+  .W_shoplist_bot {}
+    .W_shoplist_bot_l {}
+      .W_shoplist_bot_l image {width: 70px;height: 70px;margin-top:30rpx;border-radius: 8rpx;}
+    .W_shoplist_bot_r {width: 75%;}
+      .W_shoplist_bot_r_1 {height: 50rpx;line-height:50rpx;margin-top: 20rpx;}
+      .W_shoplist_bot_r_2_r {width: 160rpx;height: 50rpx;line-height: 50rpx;text-align: center;border-radius: 15rpx;}

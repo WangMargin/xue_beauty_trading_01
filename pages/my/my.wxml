@@ -1,0 +1,45 @@
+<!-- 顶部用户信息  -->
+<view class='W_my txt_ct mg_t40'>
+  <!-- <image class='W_top_img' src='../../images/plane.png'></image> -->
+  <image class='W_my_img' src='{{userInfo.avatarUrl}}'></image>
+  <view class='fon14_333 mg_t20'>{{userInfo.nickName}}</view>
+</view>
+
+<!-- 中间卡片  -->
+<view class='W_my_m  fon17_pink'>
+  <view class='fl txt_ct' catchtap='toorder'>订单</view>
+  <view class='fl txt_ct' bindtap='tocard'>会员卡</view>
+</view>
+
+<!-- 列表  -->
+<view class='W_my_list'>
+  <view class='W_my_list1 clearFix' catchtap='show'>
+    <image class='fl' src='../../images/fen.png'></image>
+    <text class='fl mg_l30'>分销中心</text>
+    <image class='fr' src='../../images/forright.png'></image>
+  </view>
+  <view class='W_my_list1 clearFix' catchtap='callme'>
+    <image class='fl' src='../../images/zx.png'></image>
+    <text class='fl mg_l30'>在线咨询</text>
+    <image class='fr' src='../../images/forright.png'></image>
+  </view>
+  <view class='W_my_list1 no_border clearFix' catchtap='toaboutus'>
+    <image class='fl' src='../../images/aboutus.png'></image>
+    <text class='fl mg_l30'>关于我们</text>
+    <image class='fr' src='../../images/forright.png'></image>
+  </view>
+
+</view>
+
+
+<!-- 点击弹出分销框  -->
+<view class='W_mask' catchtouchmove="myCatchTouch" hidden='{{maskshow}}' catchtap='show'></view>
+<view class='W_videobox txt_ct' catchtouchmove="myCatchTouch" hidden='{{maskshow}}'>
+  <view class='fon16_333 fon700 pd_30 mg_t20'>申请成为分销商</view>
+  <view class='fon14_333 '>是否申请？</view>
+  <view class='W_pop_btn clearFix '>
+    <view class='fl fon14_9b'>取消</view>
+    <view class='fl fon14_pink' catchtap='tofencenter'>确定</view>
+  </view>
+</view>
+<!-- 点击弹出分销框 END -->

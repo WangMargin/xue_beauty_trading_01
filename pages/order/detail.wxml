@@ -1,0 +1,156 @@
+<!-- 
+    备注：这是订单全部完成之后的状态显示
+  -->
+<view wx:for="{{detaillist}}" hidden='{{toshow1}}'>
+  <!-- 商品信息  -->
+  <view class='W_detail_top pd_30 bg_fa clearFix'>
+    <view class='W_detail_top_l clearFix fl'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='W_detail_top_r fl mg_l30 '>
+      <view class='fon17_333 one'>{{item.name}}</view>
+      <view class='fon14_9b'>商品总价:￥{{item.money}}</view>
+      <view class='fon14_9b'>快递￥{{item.kdmoney}}</view>
+    </view>
+  </view>
+  <!-- 商品信息 END  -->
+
+  <!-- 收货人 收货地址  -->
+  <view class='W_goodsuser pd_lr30_tb10 clearFix'>
+    <view class='W_goodsuser_1 fon14_64'>
+      <text class='W_goodsuser_1_txt fl'>收货人：</text>
+      <text class='fl'>{{item.username}}</text>
+      <text class='fr'>{{item.usernum}}</text>
+    </view>
+    <view class='W_goodsuser_2 fon14_64'>
+      <text class='W_goodsuser_1_txt fl'>收货地址：</text>
+      <text class='W_goodsuser_2_txt fl'>{{item.address}}</text>
+    </view>
+  </view>
+  <!-- 收货人 收货地址 END -->
+
+  <!-- 隔断  -->
+  <view class='ge_fa10'></view>
+
+  <!-- 订单信息  -->
+  <view class='W_orderlist pd_lr30'>
+    <view class='W_orderlist_1  fon14_9b mg_t20'>订单号码：{{item.ddnum}}</view>
+    <view class='W_orderlist_1  fon14_9b'>达达快递：{{item.kdnum}}</view>
+    <view class='W_orderlist_1  fon14_9b mg_b20'>下单时间：
+      <text class='fon14_333'>{{item.time}}</text> </view>
+  </view>
+  <view class='fon14_333 bd_ted pd_30'>佣金：
+    <text class='fr fon14_pink fon700'>￥{{item.yjmoney}}</text>
+  </view>
+  <!-- 订单信息 END -->
+</view>
+
+
+<!-- 
+    备注：这是订单已付款界面   “等待快递员取件”  状态
+  -->
+<view wx:for="{{detaillist}}" hidden='{{toshow2}}'>
+  <view class='W_type fon18_fff txt_ct W_jian_lr'>等待快递员取件</view>
+  <!-- 商品信息  -->
+  <view class='W_detail_top pd_30 bg_fa clearFix'>
+    <view class='W_detail_top_l clearFix fl'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='W_detail_top_r fl mg_l30 '>
+      <view class='fon17_333 one'>{{item.name}}</view>
+      <view class='fon14_9b'>商品总价:￥{{item.money}}</view>
+      <view class='fon14_9b'>快递￥{{item.kdmoney}}</view>
+    </view>
+  </view>
+  <!-- 商品信息 END  -->
+
+  <!-- 收货人 收货地址  -->
+  <view class='W_goodsuser pd_lr30_tb10 clearFix'>
+    <view class='W_goodsuser_1 fon14_64'>
+      <text class='W_goodsuser_1_txt fl'>收货人：</text>
+      <text class='fl'>{{item.username}}</text>
+      <text class='fr'>{{item.usernum}}</text>
+    </view>
+    <view class='W_goodsuser_2 fon14_64'>
+      <text class='W_goodsuser_1_txt fl'>收货地址：</text>
+      <text class='W_goodsuser_2_txt fl'>{{item.address}}</text>
+    </view>
+  </view>
+  <!-- 收货人 收货地址 END -->
+
+  <!-- 隔断  -->
+  <view class='ge_fa10'></view>
+
+  <!-- 订单信息  -->
+  <view class='W_orderlist pd_lr30'>
+    <view class='W_orderlist_1  fon14_9b mg_t20'>订单号码：{{item.ddnum}}</view>
+    <view class='W_orderlist_1  fon14_9b'>达达快递：{{item.kdnum}}</view>
+    <view class='W_orderlist_1  fon14_9b mg_b20'>下单时间：
+      <text class='fon14_333'>{{item.time}}</text> </view>
+  </view>
+  <view class='fon14_333 bd_ted pd_30'>佣金：
+    <text class='fr fon14_pink fon700'>￥{{item.yjmoney}}</text>
+  </view>
+  <!-- 订单信息 END -->
+</view>
+
+
+<!-- 
+    备注：这是订单待付款界面   “等待买家付款”  状态
+  -->
+<view wx:for="{{detaillist}}" hidden='{{toshow3}}'>
+  <view class='W_type fon18_fff txt_ct W_jian_lr'>等待买家付款</view>
+  <!-- 商品信息  -->
+  <view class='W_detail_top pd_30 bg_fa clearFix'>
+    <view class='W_detail_top_l clearFix fl'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='W_detail_top_r fl mg_l30 '>
+      <view class='fon17_333 one'>{{item.name}}</view>
+      <view class='fon14_9b'>商品总价:￥{{item.money}}</view>
+      <view class='fon14_9b'>快递￥{{item.kdmoney}}</view>
+    </view>
+  </view>
+  <!-- 商品信息 END  -->
+
+  <!-- 收货人 收货地址  -->
+  <view class='W_goodsuser pd_lr30_tb10 clearFix'>
+    <view class='W_goodsuser_1 fon14_64'>
+      <text class='W_goodsuser_1_txt fl'>收货人：</text>
+      <text class='fl'>{{item.username}}</text>
+      <text class='fr'>{{item.usernum}}</text>
+    </view>
+    <view class='W_goodsuser_2 fon14_64'>
+      <text class='W_goodsuser_1_txt fl'>收货地址：</text>
+      <text class='W_goodsuser_2_txt fl'>{{item.address}}</text>
+    </view>
+  </view>
+  <!-- 收货人 收货地址 END -->
+
+  <!-- 隔断  -->
+  <view class='ge_fa10'></view>
+
+  <!-- 订单信息  -->
+  <view class='W_orderlist pd_lr30'>
+    <view class='W_orderlist_1  fon14_9b mg_t20'>订单号码：{{item.ddnum}}</view>
+    <view class='W_orderlist_1  fon14_9b mg_b20'>下单时间：
+      <text class='fon14_333'>{{item.time}}</text> </view>
+  </view>
+  <view class='fon14_333 bd_ted pd_30'>佣金：
+    <text class='fr fon14_pink fon700'>￥{{item.yjmoney}}</text>
+  </view>
+  <!-- 订单信息 END -->
+</view>
+
+
+
+<!-- 
+    这里是为了显示订单状态 所加入的按钮 后期需要删除
+  -->
+  <view>
+    <view class='fon14_pink txt_ct'>这里是为了显示订单状态 所加入的按钮 后期需要删除</view>
+    <button catchtap='show'>全部完成状态</button>
+    <button catchtap='show2'>等待快递员取件状态</button>
+    <button catchtap='show3'>等待买家付款状态</button>
+
+  </view>

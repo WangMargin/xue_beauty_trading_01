@@ -1,0 +1,93 @@
+<view class='' hidden='{{cardshow}}'>
+  <!-- 会员卡  -->
+  <view class='W_card W_jian_lr pd_30'>
+    <view class='W_card_t mg_t20'>
+      <text class='fon17_fff'>普通会员</text>
+      <text class='fon14_fff fr'>000000000</text>
+    </view>
+    <view class='W_card_m mg_t40 clearFix'>
+      <view class='fl'>
+        <image src='{{userInfo.avatarUrl}}'></image>
+      </view>
+      <view class='fl fon14_fff lin_50 mg_l20'>
+        <view class='mg_t10'>{{userInfo.nickName}}</view>
+        <view>15131222222</view>
+      </view>
+    </view>
+    <view class='W_card_b mg_t40 fon14_fff clearFix'>
+      <text class='fl mg_t20'>账户余额：￥400</text>
+      <text class='W_card_b_r fr' catchtap='tochongzhi'>充值有礼</text>
+    </view>
+  </view>
+  <!-- 会员卡 END -->
+
+  <!-- 积分兑换  -->
+  <view class='ge_fa10'></view>
+  <view class='W_card_change'>
+    <view class='W_card_change_1'>
+      <text class='fon17_333'>积分：</text>
+      <text class='fon17_pink'>2455</text>
+      <text class='W_card_change_1_b W_jian_lr fon14_fff fr' catchtap='tojifen'>兑换</text>
+    </view>
+  </view>
+  <view class='ge_fa10'></view>
+  <!-- 积分兑换 END -->
+
+  <!-- 积分规则  -->
+  <view class='W_card_change_1'>
+    <view class='fon14_64'>积分规则</view>
+    <view class='lin_45 mg_t20' wx:for="{{fuli}}">
+      <view class='W_radius fl'></view>
+      <view class='W_word fon13_9b fl'>{{item.word}}</view>
+    </view>
+  </view>
+  <!-- 积分规则 END -->
+</view>
+
+
+
+<!-- 会员卡申请界面  -->
+<view class='' hidden='{{!cardshow}}'>
+  <!-- 会员卡  -->
+  <view class='no_W_card bg_9b pd_30'>
+    <view class='no_W_card_t '>
+      <text class='fon17_fff'>VIP Card</text>
+      <text class='fon14_fff fr'>未开通</text>
+    </view>
+    <view class='no_W_card_m mg_t20 clearFix txt_ct fon14_fff'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+      <view class='mg_t20 '>{{userInfo.nickName}}</view>
+      <view class='no_W_card_m_btn mg_t20 '>充值200元即可领取会员卡</view>
+    </view>
+
+  </view>
+  <view class='no_W_card_b mg_t40 fon14_fff clearFix W_jian_lr' catchtap='tochongzhi'>立即开通</view>
+  <!-- 会员卡 END -->
+
+  <!-- 积分兑换  -->
+  <view class='ge_fa10'></view>
+  <view class='no_W_card_change'>
+    <view class='no_W_card_change_1'>
+      <text class='fon17_333'>积分：</text>
+      <text class='fon17_333'>0</text>
+      <text class='no_W_card_change_1_b fon14_fff fr' catchtap='tojifen'>兑换</text>
+    </view>
+  </view>
+  <view class='ge_fa10'></view>
+  <!-- 积分兑换 END -->
+
+  <!-- 积分规则  -->
+  <view class='no_W_card_change_1'>
+    <view class='fon14_9b'>会员卡使用须知</view>
+    <view class='lin_45 mg_t20 fon14_333 clearFix' wx:for="{{xuzhi}}">
+      <view class='no_W_radius fl'>{{item.wnum}}.</view>
+      <view class='no_W_word fl'>{{item.word}}</view>
+    </view>
+  </view>
+  <!-- 积分规则 END -->
+</view>
+<!-- 会员卡申请界面 END -->
+
+
+<!-- 后面需要删除的   这是一个状态  -->
+<button catchtap='show' class=' mg_t40' style=''>显示领取会员卡 和 未领取会员卡的</button>

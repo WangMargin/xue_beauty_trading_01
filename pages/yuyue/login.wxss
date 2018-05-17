@@ -1,0 +1,57 @@
+
+.W_yy_login {width: 95%;margin: 15% auto 0 auto;}
+.W_yy_login_1 {height: 100rpx;line-height: 100rpx;border-bottom:1px solid #EDEEF0;}
+  .W_yy_login_1 input {height: 100rpx;line-height: 100rpx;}
+  .W_yy_login_1 image {width: 22px;height: 22px;margin-top:26rpx;}
+  .W_yy_login_1 text::after {content: "";width: 2rpx;height: 60rpx;background:#EDEEF0;position: absolute;z-index: 9;right: 290rpx;margin-top: 20rpx;}
+.W_yy_login_btn {width: 428rpx;height: 80rpx;text-align: center;line-height: 80rpx;border-radius: 40rpx;margin:100rpx auto;}
+
+
+.W_detail_top {border-bottom: 1px solid #FAFAFA;}
+.W_detail_top_l image{width: 160rpx;height: 160rpx;}
+.W_detail_top_r {width: 500rpx;}
+.W_detail_top_r view{}
+
+
+.W_yulan_list {width: 100%;height: 120rpx;line-height: 120rpx;}
+.W_yulan_list image {width: 22px;height: 22px;margin-top: 35rpx;}
+.W_yulan_list text {width: 160rpx;height: 120rpx;}
+.W_yulan_list input {height: 120rpx;}
+.W_yuyue_btn {width: 100%;height: 100rpx;line-height: 100rpx;position: fixed;left: 0;bottom: 0;z-index: 9999;}
+
+/* 滑块  */
+page {background: #fff;}
+/* 滑块 +++++++++++++++++++++++++++++++++++++++++++++++ */
+.swiper-tab {
+  background: #FFF;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+}      
+
+.swiper-tab-list {
+  display: inline-block;
+  margin: 0 10%;
+}
+
+.on {
+  color:#FF6A88 ;
+  border-bottom: 6rpx solid #FF6A88;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 滑块 END ++++++++++++++++++++++++++++++++++++++++++++ */
+.W_yy_yuan {width: 18px!important;height: 18px!important;}
+
+/* 遮罩层  */
+.W_mask {width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index: 99;background: rgba(0, 0, 0, 0.6);}
+.W_pop {border-radius: 15rpx;overflow: hidden;background: #fff;width: 630rpx;position: fixed;margin-left: -315rpx;left: 50%;z-index: 999;top: 25%;}
+.W_pop_img {}
+.W_pop_img_til {border-bottom: 1px solid #FAFAFA;}
+.W_nowbtn {width: 160rpx;height: 56rpx;text-align: center;line-height: 56rpx;border-radius: 28rpx;}

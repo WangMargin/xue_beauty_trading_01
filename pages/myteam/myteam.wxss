@@ -1,0 +1,38 @@
+page {background: #EDEEF0;}
+/* 滑块 +++++++++++++++++++++++++++++++++++++++++++++++ */
+.swiper-tab {
+  background: #FFF;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+}      
+
+.swiper-tab-list {
+  display: inline-block;
+  margin: 0 10%;
+}
+
+.on {
+  color:#FF6A88 ;
+  border-bottom: 6rpx solid #FF6A88;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 滑块 END ++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*   */
+.W_shoplist {height:160rpx;margin: 20rpx auto 0 auto;background: #fff; }
+  .W_shoplist::after {content: "";width: 1px;height: 100rpx;background: #EDEEF0;position: absolute;margin-top: -110rpx;right: 180rpx;}
+
+  .W_shoplist_bot {}
+    .W_shoplist_bot_l {}
+      .W_shoplist_bot_l image {width: 120rpx;height: 120rpx;margin-top:20rpx;border-radius: 8rpx;}
+    .W_shoplist_bot_r {width: 78%;}
+      .W_shoplist_bot_r_1 {height: 80rpx;line-height: 80rpx;}
+      .W_shoplist_bot_r_2 {margin-top: 20rpx;}

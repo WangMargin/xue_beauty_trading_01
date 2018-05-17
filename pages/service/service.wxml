@@ -1,0 +1,46 @@
+<view class='W_topnav clearFix pd_30'  >
+  <view class='W_topnav_all fl fon14_64'>全部</view>
+  <view class='W_topnav_type fl fon14_64 mg_l30'>
+    <view catchtap='showlist'>分类 ▽</view>
+    <view class='W_topnav_type_list' hidden='{{maskshowlist}}'>
+      <view>瘦脸</view>
+      <view>SJsal瘦脸</view>
+      <view>护理</view>
+      <view>瘦脸</view>
+      <view>减脂</view>
+      <view>护理</view>
+    </view>
+  </view>
+</view>
+
+<!-- 服务项目列表  -->
+<view class='W_boss clearFix'>
+  <view class='W_boss_b'>
+    <view class='W_boss_list fl mg_t20' wx:for="{{[1,2,3,4,5,6,7,8,9]}}" catchtap='show'>
+      <view class='W_boss_list1'>
+        <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1072354299,3768492430&fm=27&gp=0.jpg'></image>
+      </view>
+      <view class='W_boss_name fon13_333 one'>面部护理套餐</view>
+      <view class='W_boss_money fon13_pink'>￥596</view>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 遮罩层  -->
+<view class='W_mask' catchtouchmove="myCatchTouch" hidden='{{maskshow}}' catchtap='show'></view>
+<view class='W_pop' catchtouchmove="myCatchTouch" hidden='{{maskshow}}' >
+  <view class='W_pop_img'>
+    <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3011389834,2375906861&fm=27&gp=0.jpg'></image>
+    <view class='fon14_333 pd_20'>
+      <view>面部护理套餐</view>
+      <view class='fon11_9b two mg_t10'>四大皆空法律框架里的说法克里斯多夫卡萨丁打发时间看看的四大皆空法律框架里的说法克里斯多夫卡萨丁打发时间看看的</view>
+      <view class='mg_t20'>
+        <text class='fon20_pink'>￥66</text>
+        <text class='W_jian_lr W_nowbtn fon13_fff fr' catchtap='toyuyue'>立即预约</text>
+      </view>
+    </view>
+  </view>
+  
+</view>

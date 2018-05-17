@@ -1,0 +1,10 @@
+.W_detail_top_l image{width: 160rpx;height: 160rpx;}
+.W_detail_top_r {width: 500rpx;}
+.W_detail_top_r view:nth-child(1),.W_detail_top_r view:nth-child(2){height: 60rpx;}
+
+.W_type {height: 156rpx;line-height: 156rpx;}
+.W_goodsuser {}
+.W_goodsuser_1,.W_goodsuser_2 {height: 60rpx;line-height: 60rpx;}
+.W_goodsuser_1_txt {width: 150rpx;}
+.W_goodsuser_2_txt {width: 530rpx;line-height:40rpx;margin-top:10rpx;}
+.W_orderlist_1 {height: 60rpx;line-height: 60rpx;}

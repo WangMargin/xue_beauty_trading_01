@@ -1,0 +1,42 @@
+<!-- 顶部商品信息  -->
+<view class='W_detail pd_30 clearFix'>
+  <view class='W_detail_l fl'>
+    <image src='http://img0.imgtn.bdimg.com/it/u=389466677,1201766833&fm=27&gp=0.jpg'></image>
+  </view>
+  <view class='W_detail_r fl mg_l30 lin_50'>
+    <view class='fon17_333'>面部护理套餐</view>
+    <view class='del fon14_9b'>原价 ￥459</view>
+    <view class='fon20_pink mg_t10'>￥298</view>
+  </view>
+</view>
+<!-- 顶部商品信息 END -->
+
+<!-- 预约信息  -->
+<view class='W_yuyue_news pd_30'>
+  <view class='W_yuyue_newstime fon14_333 clearFix'>
+    <view class=''> 
+      <text class='fon14_9b'>预约时间</text>
+      <text class='fr '>15:00</text>
+    </view>
+    <view class='txt_r'>
+      2018-04-12
+    </view>
+  </view>
+  <view class='W_yuyue_newstime fon14_333 clearFix mg_t20'>
+    <view class=''> 
+      <text class='fon14_9b'>服务技师</text>
+      <text class='fr fon14_pink'>15:00</text>
+    </view>
+  </view>
+</view>
+<!-- 预约信息 END -->
+
+<!-- 套餐内容  -->
+<view class='W_word pd_30'>
+  <view class='fon16_9b'>套餐内容</view>
+  <view class='mg_t20 clearFix' wx:for='{{[1,2,3,4]}}'>
+    <text class='fl fon14_333'>面部清洁</text>
+    <text class='fr fon14_9b'>￥98</text>
+  </view>
+</view>
+<!-- 套餐内容 END -->

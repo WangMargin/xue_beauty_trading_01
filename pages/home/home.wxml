@@ -1,0 +1,87 @@
+<!-- 首页顶部轮播  -->
+<view class='W_home'>
+  <swiper class='W_home_sw' indicator-dots="true" autoplay="true" interval="2000" duration="1000" circular>
+    <swiper-item wx:for="{{swlist}}">
+      <image class='W_swiperimg' src='{{item.img}}'></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 首页顶部轮播 END  -->
+
+<!-- nav 导航  -->
+<view class='W_nav pd_30 clearFix mg_t20'>
+  <block wx:for="{{navlist}}">
+    <view class='W_nav_list1 fl fon13_333 txt_ct' catchtap='{{item.bind}}'>
+      <view>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='mg_t10'>{{item.til}}</view>
+    </view>
+  </block>
+</view>
+<!-- nav 导航 END -->
+
+<!-- 分割  -->
+<view class='ge_fa10'></view>
+
+<!-- 店长推荐  -->
+<view class='W_boss clearFix'>
+  <view class='W_boss_til fon14_9b txt_ct pd_30 line'>店长推荐</view>
+  <view class='W_boss_b' catchtap='show'>
+    <view class='W_boss_list fl' wx:for="{{[1,2,3]}}">
+      <view class='W_boss_list1'>
+        <image src='{{shoptj}}'></image>
+      </view>
+      <view class='W_boss_name fon13_333 one'>面部护理套餐</view>
+      <view class='W_boss_money fon13_pink'>￥596</view>
+    </view>
+  </view>
+</view>
+<!-- 店长推荐 END  -->
+
+<!-- 我们的技师  -->
+<view class='W_our clearFix mg_t20'>
+  <view class='fon14_9b txt_ct pd_30 line'>我们的技师</view>
+  <block wx:for="{{ourlist}}">
+    <view class='W_our_list1 fl fon13_333 txt_ct'>
+      <view>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='W_our_list1_name lin_50 fon14_pink one'>{{item.til}}aasdfsadfds</view>
+      <view class='W_our_list1_name fon14_64'>擅长领域</view>
+      <view class='W_our_list1_name fon11_9b'>{{item.word}}</view>
+    </view>
+  </block>
+</view>
+<!-- 我们的技师 END -->
+
+<!-- 我们的团队  -->
+<view class='W_team clearFix mg_t20'>
+  <view class='fon14_9b txt_ct pd_30 line'>我们的团队</view>
+  <view class='W_team_sw_box'>
+    <swiper class='W_team_sw' indicator-dots="true" autoplay="true" interval="2000" duration="1000" circular>
+      <swiper-item wx:for="{{team}}">
+        <image class='W_team_swiperimg' src='{{item}}' data-src="{{item}}" bindtap="previewImage"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+<!-- 我们的团队 END -->
+
+
+<!-- 遮罩层  -->
+<view class='W_mask' catchtouchmove="myCatchTouch" hidden='{{maskshow}}' catchtap='show'></view>
+<view class='W_pop' catchtouchmove="myCatchTouch" hidden='{{maskshow}}' >
+  <view class='W_pop_img'>
+    <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3011389834,2375906861&fm=27&gp=0.jpg'></image>
+    <view class='fon14_333 pd_20'>
+      <view>面部护理套餐</view>
+      <view class='fon11_9b two mg_t10'>四大皆空法律框架里的说法克里斯多夫卡萨丁打发时间看看的四大皆空法律框架里的说法克里斯多夫卡萨丁打发时间看看的</view>
+      <view class='mg_t20'>
+        <text class='fon20_pink'>￥66</text>
+        <text class='W_jian_lr W_nowbtn fon13_fff fr' catchtap='toyuyue'>立即预约</text>
+      </view>
+    </view>
+  </view>
+  
+</view>

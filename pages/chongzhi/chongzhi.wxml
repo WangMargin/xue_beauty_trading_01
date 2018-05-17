@@ -1,0 +1,44 @@
+<form>
+  <view class='pd_30'>
+    <view class="fon17_333">本次充值金额</view>
+    <input class='W_inp mg_t20' placeholder='0.00' placeholder-style='font-size:40px;color:#FF6A88;'></input>
+    <view class='fon11_9b mg_t20'>在线充值有奖：充500送100，充1000送300</view>
+  </view>
+
+  <!-- 隔断  -->
+  <view class='ge_fa10'></view>
+
+  <!-- 会员福利  -->
+  <view class='W_members pd_30'>
+    <view class='fon14_64'>会员福利</view>
+    <view class='lin_45 mg_t20' wx:for="{{fuli}}">
+      <view class='W_radius fl'></view>
+      <view class='W_word fon13_9b fl'>{{item.word}}</view>
+    </view>
+  </view>
+  <!-- 会员福利 END -->
+
+  <!-- 开通会员卡按钮  -->
+  <view class='W_chongzhi_btn W_jian_lr txt_ct fon17_fff' catchtap='show'>开通会员卡</view>
+  <!-- 开通会员卡按钮 END -->
+</form>
+
+
+<!-- 遮罩层  -->
+<view class='W_mask' catchtouchmove="myCatchTouch" hidden='{{maskshow}}' catchtap='show'></view>
+<view class='W_pop' catchtouchmove="myCatchTouch" hidden='{{maskshow}}'>
+  <radio-group>
+    <view class='W_pop_til fon17_9b txt_ct pd_30'>充值金额</view>
+    <view class='fon20_333 fon700 txt_ct'>￥45</view>
+    <view class='W_pop_1 pd_30 fon14_64 mg_t20'>
+      <text>线下支付</text>
+      <text class='mg_l20 fon11_64'>银行卡支付</text>
+      <radio class='fr'></radio>
+    </view>
+    <view class='W_pop_1 pd_30 fon14_333'>
+      <text>微信支付</text>
+      <radio class='fr'></radio>
+    </view>
+    <view class='w_pop_btn W_jian_lr fon17_fff'>确定</view>
+  </radio-group>
+</view>

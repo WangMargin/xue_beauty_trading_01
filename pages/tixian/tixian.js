@@ -1,0 +1,80 @@
+//index.js  
+//获取应用实例  
+var app = getApp()
+Page({
+  data: {
+    /** 
+        * 页面配置 
+        */
+    winWidth: 0,
+    winHeight: 0,
+    // tab切换  
+    currentTab: 0,
+
+    // 产品假数据
+    listshop: [
+      { 'time': '05/19/2018', 'type': '待付款',  'may': '微信钱包', 'money': '123', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '05/20/2018', 'type': '待审核', 'may': '微信钱包', 'money': '332', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '05/31/2018', 'type': '已打款', 'may': '微信钱包', 'money': '56', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '06/19/2018', 'type': '已打款', 'may': '微信钱包', 'money': '11', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '08/19/2018', 'type': '待付款', 'may': '微信钱包', 'money': '36', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '08/21/2018', 'type': '待打款', 'may': '微信钱包', 'money': '32', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '09/30/2018', 'type': '无效', 'may': '微信钱包', 'money': '8', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '10/23/2018', 'type': '待审核', 'may': '微信钱包', 'money': '100', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '12/15/2018', 'type': '无效', 'may': '微信钱包', 'money': '54', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+      { 'time': '12/11/2018', 'type': '待付款', 'may': '微信钱包', 'money': '65', 'bind1': '######', 'bind2': '######', 'bind3': '######' },
+     
+    ],
+
+
+  },
+  top:function(){
+    wx.switchTab({
+      url: '',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  onLoad: function () {
+    var that = this;
+
+    /** 
+     * 获取系统信息 
+     */
+    wx.getSystemInfo({
+
+      success: function (res) {
+        that.setData({
+          winWidth: res.windowWidth,
+          winHeight: res.windowHeight
+        });
+      }
+
+    });
+  },
+  /** 
+     * 滑动切换tab 
+     */
+  bindChange: function (e) {
+
+    var that = this;
+    that.setData({ currentTab: e.detail.current });
+
+  },
+  /** 
+   * 点击tab切换 
+   */
+  swichNav: function (e) {
+
+    var that = this;
+
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  }
+})  

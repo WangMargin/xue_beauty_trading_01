@@ -1,0 +1,26 @@
+/* 已经是会员的显示  */
+.W_card {width: 670rpx;height: 400rpx;margin: 20rpx auto;border-radius: 15rpx;}
+
+.W_card_m image{width: 108rpx;height: 108rpx;border-radius: 8rpx;}
+.W_card_b_r {display: inline-block;padding: 10rpx 20rpx;border: 1px solid #fff;}
+
+.W_card_change {width: 100%;}
+.W_card_change_1 {width: 670rpx;margin: 0 auto;padding: 20rpx 0;}
+.W_card_change_1_b {display: inline-block;padding: 6rpx 25rpx;border-radius: 50rpx;}
+
+.W_radius {width: 10rpx;height: 10rpx;background: #EDEEF0;border-radius: 50%;margin: 15rpx 40rpx 0 0;}
+.W_word {width: 92%;}
+
+/* 需要申请会员卡的界面  */
+.no_W_card {width: 670rpx;height: 400rpx;margin: 20rpx auto;border-radius: 15rpx;}
+
+.no_W_card_m image{width: 120rpx;height: 120rpx;border-radius: 8rpx;}
+.no_W_card_m_btn {width: 470rpx;height: 50rpx;line-height: 50rpx;margin: 40rpx auto 0rpx auto;border: 1px #fff solid;border-radius: 15rpx;}
+.no_W_card_b {width: 250rpx;height: 76rpx;line-height: 76rpx;text-align: center;margin: 20rpx auto;border-radius: 15rpx;}
+
+.no_W_card_change {width: 100%;}
+.no_W_card_change_1 {width: 670rpx;margin: 0 auto;padding: 20rpx 0;}
+.no_W_card_change_1_b {display: inline-block;padding: 6rpx 25rpx;border-radius: 50rpx;background: #9b9b9b;}
+
+.no_W_radius {margin:0 30rpx 0 0;}
+.no_W_word {width: 90%;}

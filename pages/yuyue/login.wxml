@@ -1,0 +1,195 @@
+<view class='W_yy_login pd_30' hidden='{{!dengshow}}'>
+  <view class='W_yy_login_1 clearFix '>
+    <image class='fl' src='../../images/mobilephone.png'></image>
+    <input class='fl fon14_333 mg_l20' placeholder='请输入电话号码' type='number'></input>
+    <text class='fr fon14_pink' wx:if="{{second >0 }}">发送验证码({{second}}s)</text>
+    <text class='fr fon14_9b' wx:else>重新获取验证码</text>
+  </view>
+  <view class='W_yy_login_1 clearFix'>
+    <image class='fl' src='../../images/yzm.png'></image>
+    <input class='fl fon14_333 mg_l20' placeholder='请输入验证码'></input>
+  </view>
+  <view class='W_yy_login_btn W_jian_lr fon17_fff' catchtap='toyuyue'>登录</view>
+  <view class='fon11_9b txt_ct' catchtap='toindex'>返回首页</view>
+</view>
+
+
+
+<!-- 登录成功后显示   -->
+<view hidden='{{dengshow}}'>
+
+
+  <view class="swiper-tab fon14_333">
+    <view class=" swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">店内服务</view>
+    <view class=" swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">上门服务</view>
+  </view>
+
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-45}}px" bindchange="bindChange">
+    <!-- 待使用-->
+    <swiper-item>
+      <form>
+        <scroll-view scroll-Y style="height:{{winHeight - 100}}px">
+          <!-- 商品信息  -->
+          <!-- 商品信息  -->
+          <view class='W_detail_top pd_20 clearFix' wx:for="{{detaillist}}">
+            <view class='W_detail_top_l clearFix fl'>
+              <image src='{{item.img}}'></image>
+            </view>
+            <view class='W_detail_top_r fl mg_l30 '>
+              <view class='fon17_333 one'>{{item.name}}</view>
+              <view class='fon11_9b two mg_t10'>商品总价:￥{{item.money}}</view>
+              <view class='fon16_333 mg_t10'>￥{{item.kdmoney}}</view>
+            </view>
+          </view>
+          <!-- 商品信息 END  -->
+          <!-- 商品信息 END -->
+          <view class='W_yulan pd_lr30'>
+            <view class='W_yulan_list bd_bed'>
+              <text class='fon16_333 fl'>姓名称呼</text>
+              <input class='fon14_333 fl' placeholder='请输入姓名称呼'></input>
+            </view>
+            <view class='W_yulan_list bd_bed'>
+              <text class='fon16_333 fl'>联系电话</text>
+              <input class='fon14_333 fl' placeholder='请输入联系电话'></input>
+              <image class='fr' src='../../images/telbook.png'></image>
+            </view>
+            <view class='W_yulan_list bd_bed'>
+              <text class='fon16_333 fl'>联系地址</text>
+              <input class='fon14_333 fl' placeholder='请输入联系地址'></input>
+              <image class='fr' src='../../images/address.png'></image>
+            </view>
+            <view class='W_yulan_list bd_bed' catchtap='toxiangmu'>
+              <text class='fon16_333 fl'>服务项目</text>
+              <view class='fon14_pink fl'>面部护理套餐</view>
+            </view>
+
+            <view class='W_yulan_list bd_bed'>
+              <text class='fon16_333 fl'>服务技师</text>
+              <view class='fon14_pink fl'>
+                  <picker class='' value="{{index}}" range='{{name}}' bindchange="bindjishi">
+                    <view class="picker">{{name[index]}}</view>
+                  </picker>
+              </view>
+            </view>
+
+            <view class='W_yulan_list bd_bed flearFix'>
+              <text class='fon16_333 fl'>预约时间</text>
+              <view class='fon14_333 fl'>
+                <picker class='fl' mode="date" value="{{date}}" bindchange="bindDateChange">
+                  <view class="picker ">{{date}}</view>
+                </picker>
+                <picker class='fl mg_l30' mode="time" value="{{time}}" start="09:00" end="21:00" bindchange="bindTimeChange">
+                  <view class="picker ">{{time}}</view>
+                </picker>
+              </view>
+              <image class='fr' src='../../images/yuyue.png'></image>
+            </view>
+            <view class='W_yulan_list bd_bed' catchtap='toyhq'>
+              <text class='fon16_333 fl'>优惠券</text>
+              <view class='fon14_9b fl'>请选择优惠券</view>
+              <image class='fr' src='../../images/yhq.png'></image>
+            </view>
+          </view>
+        </scroll-view>
+        <view class='W_yuyue_btn fon17_fff W_jian_lr txt_ct'>立即预约</view>
+      </form>
+    </swiper-item>
+    <!-- 待使用 END-->
+
+
+    <!-- 待领取 -->
+    <swiper-item>
+      <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+        <form>
+          <scroll-view scroll-Y style="height:{{winHeight - 100}}px">
+
+            <!-- 商品信息  -->
+            <!-- 商品信息  -->
+            <view class='W_detail_top pd_20 clearFix' wx:for="{{detaillist}}">
+              <view class='W_detail_top_l clearFix fl'>
+                <image src='{{item.img}}'></image>
+              </view>
+              <view class='W_detail_top_r fl mg_l30 '>
+                <view class='fon17_333 one'>{{item.name}}</view>
+                <view class='fon11_9b two mg_t10'>商品总价:￥{{item.money}}</view>
+                <view class='fon16_333 mg_t10'>￥{{item.kdmoney}}</view>
+              </view>
+            </view>
+            <!-- 商品信息 END  -->
+            <!-- 商品信息 END -->
+            <view class='W_yulan pd_lr30'>
+              <view class='W_yulan_list bd_bed'>
+                <text class='fon16_333 fl'>姓名称呼</text>
+                <input class='fon14_333 fl' placeholder='请输入姓名称呼'></input>
+              </view>
+              <view class='W_yulan_list bd_bed'>
+                <text class='fon16_333 fl'>联系电话</text>
+                <input class='fon14_333 fl' placeholder='请输入联系电话'></input>
+                <image class='fr' src='../../images/telbook.png'></image>
+              </view>
+              <view class='W_yulan_list bd_bed'>
+                <text class='fon16_333 fl'>联系地址</text>
+                <input class='fon14_333 fl' placeholder='请输入联系地址'></input>
+                <image class='fr' src='../../images/address.png'></image>
+              </view>
+              <view class='W_yulan_list bd_bed' catchtap='toxiangmu'>
+                <text class='fon16_333 fl'>服务项目</text>
+                <view class='fon14_pink fl'>面部护理套餐</view>
+              </view>
+              <view class='W_yulan_list bd_bed'>
+              <text class='fon16_333 fl'>服务技师</text>
+              <view class='fon14_pink fl'>
+                  <picker class='' value="{{index}}" range='{{name}}' bindchange="bindjishi">
+                    <view class="picker">{{name[index]}}</view>
+                  </picker>
+              </view>
+            </view>
+              <view class='W_yulan_list bd_bed flearFix'>
+                <text class='fon16_333 fl'>预约时间</text>
+                <view class='fon14_333 fl'>
+                  <picker class='fl' mode="date" value="{{date}}" bindchange="bindDateChange">
+                    <view class="picker ">{{date}}</view>
+                  </picker>
+                  <picker class='fl mg_l30' mode="time" value="{{time}}" start="09:00" end="21:00" bindchange="bindTimeChange">
+                    <view class="picker ">{{time}}</view>
+                  </picker>
+                </view>
+                <image class='fr' src='../../images/yuyue.png'></image>
+              </view>
+              <view class='W_yulan_list bd_bed' catchtap='toyhq'>
+                <text class='fon16_333 fl'>优惠券</text>
+                <view class='fon14_9b fl'>请选择优惠券</view>
+                <image class='fr' src='../../images/yhq.png'></image>
+              </view>
+              <view class='W_yulan_list bd_bed' catchtap='show'>
+                <view class='fon16_333 fl'>服务费
+                  <image class='W_yy_yuan mg_l10' src='../../images/help.png'></image>
+                </view>
+                <view class='fon14_333 fl mg_l20'>￥50</view>
+              </view>
+            </view>
+          </scroll-view>
+          <view class='W_yuyue_btn fon17_fff W_jian_lr txt_ct'>立即预约</view>
+        </form>
+      </scroll-view>
+    </swiper-item>
+    <!-- 待领取 END -->
+  </swiper>
+</view>
+
+<!-- 遮罩层  -->
+<view class='W_mask' catchtouchmove="myCatchTouch" hidden='{{maskshow}}' catchtap='show'></view>
+<view class='W_pop' catchtouchmove="myCatchTouch" hidden='{{maskshow}}'>
+  <view class='W_pop_img'>
+    <view class=''>
+      <view class='W_pop_img_til fon16_64 txt_ct pd_30'>上门服务规则</view>
+      <view class='pd_30 fon14_333 lin_50'>
+        <view>1.金额超过200元可上门服务。</view>
+        <view>2.根据距离计算服务费。1公里为20元，1-5公里为60元。</view>
+        <view>3.会员有免费上门服务5次机会。</view>
+        <view>4.面部护理、美甲等项目可上门服务；按摩等需要大型器械的服务项目不可上门服务。</view>
+      </view>
+    </view>
+  </view>
+
+</view>

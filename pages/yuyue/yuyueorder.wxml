@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="swiper-tab fon14_333">
+  <view class=" swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">预约订单</view>
+  <view class=" swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已完成订单</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 60}}px" bindchange="bindChange">
+  <!-- 全部-->
+  <swiper-item>
+    <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+      <block wx:for="{{listshop}}">
+        <view class='W_shoplist' wx:if="{{item.type == '一级'}}" catchtap='{{item.bind1}}'>
+          <view class='W_shoplist_bot clearFix pd_lr30'>
+            <view class='W_shoplist_bot_l fl'>
+              <image src='{{item.img}}'></image>
+            </view>
+            <view class='W_shoplist_bot_r fon17_333 fr'>
+              <view class='W_shoplist_bot_r_1'>
+                <text class=' fl fon17_333'>{{item.name}}</text>
+                <text class='fon11_9b fr '>{{item.time}}</text>
+              </view>
+              <view class='W_shoplist_bot_r_2 fon13_333'>
+              <view class='fon11_9b two'>{{item.num}}</view>
+              </view>
+              <view class='W_shoplist_02  fon14_pink'>￥{{item.money}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+
+  </swiper-item>
+  <!-- 全部 END-->
+
+
+  <!-- 二级 -->
+  <swiper-item>
+    <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+      <block wx:for="{{listshop}}">
+        <view class='W_shoplist' wx:if="{{item.type == '二级'}}" catchtap='{{item.bind1}}'>
+          <view class='W_shoplist_bot clearFix pd_lr30'>
+            <view class='W_shoplist_bot_l fl'>
+              <image src='{{item.img}}'></image>
+            </view>
+            <view class='W_shoplist_bot_r fon17_333 fr'>
+              <view class='W_shoplist_bot_r_1'>
+                <text class=' fl fon17_333'>{{item.name}}</text>
+                <text class='fon11_9b fr '>{{item.time}}</text>
+              </view>
+              <view class='W_shoplist_bot_r_2 fon13_333'>
+              <view class='fon11_9b two'>{{item.num}}</view>
+              </view>
+              <view class='W_shoplist_02  fon14_pink'>￥{{item.money}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+</swiper>

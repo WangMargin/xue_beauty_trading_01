@@ -1,0 +1,21 @@
+
+
+.W_topnav_all {margin-left: 10%;}
+.W_topnav_type_list {background: #fff;position: absolute;z-index: 99;line-height: 50rpx;text-align: center;padding: 0 30rpx;box-shadow: 2rpx 4rpx 3rpx #ccc;}
+.W_topnav_type_list view {height: 90rpx;line-height: 90rpx;border-top:1px solid #FAFAFA;}
+.W_topnav_type {margin-left: 25%;}
+
+.W_boss {width: 95%;margin: 0 auto;}
+.W_boss_list {width: 33.3%;text-align: center;}
+.W_boss_list1 image{width: 200rpx;height: 200rpx;border-radius: 8rpx;}
+/* .W_boss_list1 {width: 200rpx;} */
+.W_boss_list1 image{width: 200rpx;height: 200rpx;}
+.W_boss_name,.W_boss_money {margin-top: 15rpx;text-align: left;margin-left: 8%;width: 200rpx;}
+
+
+/* 遮罩层  */
+.W_mask {width: 100%;height: 100%;position: fixed;left: 0;top: 0;z-index: 99;background: rgba(0, 0, 0, 0.6);}
+.W_pop {border-radius: 15rpx;overflow: hidden;background: #fff;width: 630rpx;position: fixed;margin-left: -315rpx;left: 50%;z-index: 999;top: 5%;}
+.W_pop_img {}
+.W_pop_img image {width: 630rpx;height: 630rpx;}
+.W_nowbtn {width: 160rpx;height: 56rpx;text-align: center;line-height: 56rpx;border-radius: 28rpx;}

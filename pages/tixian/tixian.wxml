@@ -1,0 +1,139 @@
+<!--index.wxml-->
+<view class="swiper-tab fon14_333">
+  <view class=" swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class=" swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待审核</view>
+  <view class=" swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待打款</view>
+  <view class=" swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">已打款</view>
+  <view class=" swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">无效</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 60}}px" bindchange="bindChange">
+  <!-- 全部-->
+  <swiper-item>
+    <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+      <block wx:for="{{listshop}}">
+        <view class='W_shoplist'>
+          <view class='W_shoplist_top clearFix pd_lr30'>
+            <text class='fon14_9b fl'>{{item.time}}</text>
+            <text class='fon14_pink fr'>{{item.type}}</text>
+          </view>
+          <view class='W_shoplist_bot clearFix pd_lr30 fon14_9b'>
+            <view class='W_shoplist_bot_l'>
+              <text>提现金额</text>
+              <text class='fon14_333 fr'>￥{{item.money}}</text>
+            </view>
+            <view class='W_shoplist_bot_r'>
+              <text>提现方式</text>
+              <text class='fon14_333 fr'>{{item.may}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <!-- 全部 END-->
+
+  <!-- 待审核 -->
+  <swiper-item>
+    <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+
+      <block wx:for="{{listshop}}">
+        <view class='W_shoplist' wx:if="{{item.type == '待审核'}}">
+          <view class='W_shoplist_top clearFix pd_lr30'>
+            <text class='fon14_9b fl'>{{item.time}}</text>
+            <text class='fon14_pink fr'>{{item.type}}</text>
+          </view>
+          <view class='W_shoplist_bot clearFix pd_lr30 fon14_9b'>
+            <view class='W_shoplist_bot_l'>
+              <text>提现金额</text>
+              <text class='fon14_333 fr'>￥{{item.money}}</text>
+            </view>
+            <view class='W_shoplist_bot_r'>
+              <text>提现方式</text>
+              <text class='fon14_333 fr'>{{item.may}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+
+    </scroll-view>
+  </swiper-item>
+
+  <!-- 待打款 -->
+  <swiper-item>
+    <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+
+      <block wx:for="{{listshop}}">
+        <view class='W_shoplist' wx:if="{{item.type == '待打款'}}">
+          <view class='W_shoplist_top clearFix pd_lr30'>
+            <text class='fon14_9b fl'>{{item.time}}</text>
+            <text class='fon14_pink fr'>{{item.type}}</text>
+          </view>
+          <view class='W_shoplist_bot clearFix pd_lr30 fon14_9b'>
+            <view class='W_shoplist_bot_l'>
+              <text>提现金额</text>
+              <text class='fon14_333 fr'>￥{{item.money}}</text>
+            </view>
+            <view class='W_shoplist_bot_r'>
+              <text>提现方式</text>
+              <text class='fon14_333 fr'>{{item.may}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+
+    </scroll-view>
+  </swiper-item>
+
+  <!-- 已打款 -->
+  <swiper-item>
+    <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+      <block wx:for="{{listshop}}">
+        <view class='W_shoplist' wx:if="{{item.type == '已打款'}}">
+          <view class='W_shoplist_top clearFix pd_lr30'>
+            <text class='fon14_9b fl'>{{item.time}}</text>
+            <text class='fon14_pink fr'>{{item.type}}</text>
+          </view>
+          <view class='W_shoplist_bot clearFix pd_lr30 fon14_9b'>
+            <view class='W_shoplist_bot_l'>
+              <text>提现金额</text>
+              <text class='fon14_333 fr'>￥{{item.money}}</text>
+            </view>
+            <view class='W_shoplist_bot_r'>
+              <text>提现方式</text>
+              <text class='fon14_333 fr'>{{item.may}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+
+  </swiper-item>
+
+  <!-- 无效 -->
+  <swiper-item>
+    <scroll-view scroll-Y style="height:{{winHeight - 50}}px">
+      <block wx:for="{{listshop}}">
+        <view class='W_shoplist' wx:if="{{item.type == '无效'}}">
+          <view class='W_shoplist_top clearFix pd_lr30'>
+            <text class='fon14_9b fl'>{{item.time}}</text>
+            <text class='fon14_pink fr'>{{item.type}}</text>
+          </view>
+          <view class='W_shoplist_bot clearFix pd_lr30 fon14_9b'>
+            <view class='W_shoplist_bot_l'>
+              <text>提现金额</text>
+              <text class='fon14_333 fr'>￥{{item.money}}</text>
+            </view>
+            <view class='W_shoplist_bot_r'>
+              <text>提现方式</text>
+              <text class='fon14_333 fr'>{{item.may}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+
+  </swiper-item>
+
+
+</swiper>
